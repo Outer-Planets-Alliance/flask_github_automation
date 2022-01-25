@@ -1,12 +1,11 @@
-from crypt import methods
 from flask import Flask, request
 import os
 import json
 import requests
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route("/payload", methods=["POST"])
+@application.route("/", methods=["POST"])
 def webhook():
     payload = request.get_json()
     user = "kuhlman-labs"
@@ -33,7 +32,6 @@ def webhook():
                 session.auth(user, creds)
                 response_1 = session.post(payload["repository"]["url"] + "/issues", params=issues_payload)
                 print(response_1.status_code)
-    return "OK"
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    application.run(host='0.0.0.0')
