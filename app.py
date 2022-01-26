@@ -5,6 +5,10 @@ import requests
 
 application = Flask(__name__)
 
+@application.route("/")
+def hello():
+    return "Hello, World!"
+
 @application.route("/payload", methods=["POST"])
 def webhook():
     payload = request.get_json()
