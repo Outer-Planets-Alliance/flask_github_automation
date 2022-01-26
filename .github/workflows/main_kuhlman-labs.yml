@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'kuhlman-labs'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C34CFB9EAD1D4398AF90B4963E71C62D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F519744C1317455E8865C33717E190E4 }}
