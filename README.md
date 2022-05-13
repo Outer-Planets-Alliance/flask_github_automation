@@ -29,11 +29,3 @@ This repository is meant to provide a sample of how to utilize the GitHub API an
 * set enviornment variable for `GH_TOKEN` in your web app Application settings.
 * Use the [deployment center](https://docs.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github#configure-the-deployment-source) to setup the deployment source.
 * create a [webhook](https://docs.github.com/en/developers/webhooks-and-events/webhooks/creating-webhooks#setting-up-a-webhook) in your organization and set the payload URL to the web applicaiton's URL.
-
-### Refrences used and Attribution
-- https://github.com/github/platform-samples/tree/master/hooks/python/flask-github-webhooks
-- https://github.com/zkoppert/Auto-branch-protect
-- https://docs.github.com/en/rest/reference/branches#update-branch-protection
-- https://docs.github.com/en/developers/webhooks-and-events/webhooks/creating-webhooks
-- https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#repository
-- https://docs.github.com/en/developers/webhooks-and-events/webhooks/testing-webhooks
